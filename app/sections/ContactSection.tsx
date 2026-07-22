@@ -75,9 +75,9 @@ export default function ContactSection({ id }: { id?: string }) {
   };
 
   return (
-    <section id={id} className="py-20 bg-gray-950 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-purple-950/10 to-gray-950" />
-      <div className="absolute top-40 left-1/2 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse-slow" />
+    <section id={id} className="py-20 bg-gray-950 relative overflow-hidden scroll-mt-24">
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-amber-950/10 to-gray-950" />
+      <div className="absolute top-40 left-1/2 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl animate-pulse-slow" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
@@ -90,11 +90,11 @@ export default function ContactSection({ id }: { id?: string }) {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Let's
-              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent">
                 {" "}Connect
               </span>
             </h2>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+            <p className="text-lg text-stone-400 max-w-2xl mx-auto">
               I'm always open to discussing new opportunities, interesting projects, or collaborations.
             </p>
           </motion.div>
@@ -110,7 +110,7 @@ export default function ContactSection({ id }: { id?: string }) {
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-stone-300 mb-2">
                     Your Name
                   </label>
                   <input
@@ -119,13 +119,13 @@ export default function ContactSection({ id }: { id?: string }) {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
-                    className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all duration-200"
+                    className="w-full px-4 py-3 bg-stone-800/50 border border-stone-700 rounded-xl text-white placeholder-stone-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all duration-200"
                     placeholder="e.g. Ahmed Raza"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-stone-300 mb-2">
                     Your Email
                   </label>
                   <input
@@ -134,13 +134,13 @@ export default function ContactSection({ id }: { id?: string }) {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
-                    className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all duration-200"
+                    className="w-full px-4 py-3 bg-stone-800/50 border border-stone-700 rounded-xl text-white placeholder-stone-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all duration-200"
                     placeholder="e.g. ahmed.raza@email.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-stone-300 mb-2">
                     Your Message
                   </label>
                   <textarea
@@ -149,7 +149,7 @@ export default function ContactSection({ id }: { id?: string }) {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
-                    className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all duration-200 resize-none"
+                    className="w-full px-4 py-3 bg-stone-800/50 border border-stone-700 rounded-xl text-white placeholder-stone-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all duration-200 resize-none"
                     placeholder="e.g. Hi Adan, I came across your portfolio and would love to discuss a potential opportunity..."
                   />
                 </div>
@@ -159,8 +159,8 @@ export default function ContactSection({ id }: { id?: string }) {
                   disabled={isSubmitting}
                   className={`w-full py-4 px-8 rounded-xl font-semibold text-white transition-all duration-300 transform hover:scale-105 ${
                     isSubmitting
-                      ? "bg-gray-700 cursor-not-allowed"
-                      : "bg-gradient-to-r from-purple-600 to-pink-600 hover:shadow-lg hover:shadow-purple-500/30"
+                      ? "bg-stone-700 cursor-not-allowed"
+                      : "bg-gradient-to-r from-amber-600 to-yellow-700 hover:shadow-lg hover:shadow-amber-500/30"
                   }`}
                 >
                   {isSubmitting ? (
@@ -172,7 +172,7 @@ export default function ContactSection({ id }: { id?: string }) {
                       Sending...
                     </span>
                   ) : submitted ? (
-                    <span className="flex items-center justify-center text-green-300">
+                    <span className="flex items-center justify-center text-yellow-300">
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
@@ -201,15 +201,15 @@ export default function ContactSection({ id }: { id?: string }) {
                 <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
                 <div className="space-y-6">
                   {contactInfo.map((info) => (
-                    <div key={info.label} className="glass rounded-xl p-4 border border-purple-500/30">
+                    <div key={info.label} className="glass rounded-xl p-4 border border-amber-500/30">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-purple-900/50 rounded-full flex items-center justify-center text-purple-400">
+                        <div className="w-10 h-10 bg-amber-900/50 rounded-full flex items-center justify-center text-amber-400">
                           {info.icon}
                         </div>
                         <div>
-                          <p className="text-sm text-gray-400">{info.label}</p>
+                          <p className="text-sm text-stone-400">{info.label}</p>
                           {info.href ? (
-                            <a href={info.href} className="text-white font-medium hover:text-purple-300 transition-colors">
+                            <a href={info.href} className="text-white font-medium hover:text-amber-300 transition-colors">
                               {info.value}
                             </a>
                           ) : (
@@ -231,7 +231,7 @@ export default function ContactSection({ id }: { id?: string }) {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 glass rounded-xl flex items-center justify-center text-gray-400 hover:text-white hover:border-purple-500/50 transition-all duration-300"
+                      className="w-12 h-12 glass rounded-xl flex items-center justify-center text-stone-400 hover:text-white hover:border-amber-500/50 transition-all duration-300"
                       aria-label={link.label}
                     >
                       {link.icon}
@@ -240,13 +240,13 @@ export default function ContactSection({ id }: { id?: string }) {
                 </div>
               </div>
 
-              <div className="mt-8 p-6 glass rounded-2xl border border-purple-500/30">
+              <div className="mt-8 p-6 glass rounded-2xl border border-amber-500/30">
                 <h4 className="text-lg font-semibold text-white mb-3">
-                  <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent">
                     Available for Remote Work
                   </span>
                 </h4>
-                <p className="text-gray-400">
+                <p className="text-stone-400">
                   I'm actively seeking remote opportunities in full-stack software engineering,
                   frontend development, backend development, and AI-powered application development.
                 </p>

@@ -45,8 +45,8 @@ const experiences = [
 
 export default function ExperienceSection({ id }: { id?: string }) {
   return (
-    <section id={id} className="py-16 bg-gray-950 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-gray-900/30 to-gray-950" />
+    <section id={id} className="py-16 bg-gray-950 relative overflow-hidden scroll-mt-24">
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-stone-900/30 to-gray-950" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-4xl mx-auto">
@@ -59,7 +59,7 @@ export default function ExperienceSection({ id }: { id?: string }) {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-3">
               Professional
-              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent">
                 {" "}Experience
               </span>
             </h2>
@@ -73,23 +73,23 @@ export default function ExperienceSection({ id }: { id?: string }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="relative overflow-hidden rounded-xl bg-gray-900/50 border border-gray-800 hover:border-purple-500/40 transition-all duration-300"
+                className="relative overflow-hidden rounded-xl bg-stone-900/50 border border-stone-800 hover:border-amber-500/40 transition-all duration-300"
               >
-                <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 to-pink-500" />
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-amber-500 to-yellow-600" />
 
                 <div className="p-4 md:p-5 pl-5 md:pl-6">
                   <div className="flex items-center gap-2 flex-wrap mb-1">
-                    <span className="text-xs text-purple-400 font-medium">{exp.duration}</span>
-                    <span className="text-xs text-gray-600">•</span>
-                    <span className="text-xs text-gray-400">{exp.location}</span>
+                    <span className="text-xs text-amber-400 font-medium">{exp.duration}</span>
+                    <span className="text-xs text-stone-600">•</span>
+                    <span className="text-xs text-stone-400">{exp.location}</span>
                   </div>
                   <h3 className="text-base md:text-lg font-bold text-white">{exp.title}</h3>
-                  <h4 className="text-sm text-purple-300 mb-2">{exp.company}</h4>
+                  <h4 className="text-sm text-amber-300 mb-2">{exp.company}</h4>
 
                   <ul className="space-y-1">
                     {exp.achievements.map((achievement, achievementIndex) => (
-                      <li key={achievementIndex} className="flex items-start text-sm text-gray-300">
-                        <span className="text-purple-400 mr-2 mt-0.5 flex-shrink-0">•</span>
+                      <li key={achievementIndex} className="flex items-start text-sm text-stone-300">
+                        <span className="text-amber-400 mr-2 mt-0.5 flex-shrink-0">•</span>
                         {achievement}
                       </li>
                     ))}

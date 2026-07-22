@@ -6,10 +6,10 @@ import { cn } from "../lib/utils";
 const skillCategories = [
   {
     name: "Frontend Development",
-    color: "from-blue-500 to-cyan-400",
-    textColor: "text-blue-300",
-    borderColor: "border-blue-500/30",
-    bgColor: "bg-blue-900/20",
+    color: "from-amber-500 to-yellow-400",
+    textColor: "text-amber-300",
+    borderColor: "border-amber-500/30",
+    bgColor: "bg-amber-900/20",
     skills: [
       { name: "React.js", level: 92 },
       { name: "Next.js", level: 88 },
@@ -21,10 +21,10 @@ const skillCategories = [
   },
   {
     name: "Backend Development",
-    color: "from-green-500 to-emerald-400",
-    textColor: "text-green-300",
-    borderColor: "border-green-500/30",
-    bgColor: "bg-green-900/20",
+    color: "from-yellow-600 to-amber-500",
+    textColor: "text-yellow-300",
+    borderColor: "border-yellow-500/30",
+    bgColor: "bg-yellow-900/20",
     skills: [
       { name: "Python", level: 84 },
       { name: "FastAPI", level: 78 },
@@ -34,10 +34,10 @@ const skillCategories = [
   },
   {
     name: "Databases",
-    color: "from-purple-500 to-violet-400",
-    textColor: "text-purple-300",
-    borderColor: "border-purple-500/30",
-    bgColor: "bg-purple-900/20",
+    color: "from-yellow-500 to-amber-400",
+    textColor: "text-yellow-300",
+    borderColor: "border-yellow-500/30",
+    bgColor: "bg-yellow-900/20",
     skills: [
       { name: "MongoDB", level: 78 },
       { name: "Supabase", level: 82 },
@@ -61,10 +61,10 @@ const skillCategories = [
   },
   {
     name: "Payments & Integrations",
-    color: "from-red-500 to-rose-400",
-    textColor: "text-red-300",
-    borderColor: "border-red-500/30",
-    bgColor: "bg-red-900/20",
+    color: "from-amber-600 to-orange-500",
+    textColor: "text-amber-300",
+    borderColor: "border-amber-500/30",
+    bgColor: "bg-amber-900/20",
     skills: [
       { name: "Stripe", level: 82 },
       { name: "Email Workflows", level: 77 },
@@ -72,10 +72,10 @@ const skillCategories = [
   },
   {
     name: "Development Practices",
-    color: "from-teal-500 to-cyan-400",
-    textColor: "text-teal-300",
-    borderColor: "border-teal-500/30",
-    bgColor: "bg-teal-900/20",
+    color: "from-yellow-600 to-amber-400",
+    textColor: "text-yellow-300",
+    borderColor: "border-yellow-500/30",
+    bgColor: "bg-yellow-900/20",
     skills: [
       { name: "Feature Development", level: 87 },
       { name: "Debugging & Maintenance", level: 85 },
@@ -87,8 +87,8 @@ const skillCategories = [
 
 export default function SkillsSection({ id }: { id?: string }) {
   return (
-    <section id={id} className="py-20 bg-gray-950 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-purple-950/10 to-gray-950" />
+    <section id={id} className="py-20 bg-gray-950 relative overflow-hidden scroll-mt-24">
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-amber-950/10 to-gray-950" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
@@ -101,11 +101,11 @@ export default function SkillsSection({ id }: { id?: string }) {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Technical
-              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent">
                 {" "}Skills
               </span>
             </h2>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+            <p className="text-lg text-stone-400 max-w-2xl mx-auto">
               Comprehensive expertise across the entire development stack, from frontend interfaces to backend systems and deployment.
             </p>
           </motion.div>
@@ -137,10 +137,10 @@ export default function SkillsSection({ id }: { id?: string }) {
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skill.name}>
                       <div className="flex justify-between items-center mb-2">
-                        <span className="text-gray-300 font-medium">{skill.name}</span>
+                        <span className="text-stone-300 font-medium">{skill.name}</span>
                         <span className={cn("text-sm font-bold", category.textColor)}>{skill.level}%</span>
                       </div>
-                      <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
+                      <div className="w-full bg-stone-800 rounded-full h-2 overflow-hidden">
                         <motion.div
                           initial={{ width: 0 }}
                           whileInView={{ width: `${skill.level}%` }}

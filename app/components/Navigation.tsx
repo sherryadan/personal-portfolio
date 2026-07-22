@@ -23,7 +23,6 @@ export default function Navigation() {
     { href: "/#experience", label: "Experience" },
     { href: "/#projects", label: "Projects" },
     { href: "/#education", label: "Education" },
-    { href: "/#contact", label: "Contact" },
   ];
 
   return (
@@ -31,7 +30,7 @@ export default function Navigation() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b",
         scrolled
-          ? "bg-gray-950/80 backdrop-blur-md py-3 shadow-lg shadow-purple-900/20 border-gray-800"
+          ? "bg-gray-950/80 backdrop-blur-md py-3 shadow-lg shadow-amber-900/20 border-stone-800"
           : "bg-transparent py-5 border-transparent"
       )}
     >
@@ -39,14 +38,14 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent hover:from-purple-300 hover:to-pink-500 transition-all"
+            className="text-2xl font-bold bg-gradient-to-r from-amber-300 to-yellow-500 bg-clip-text text-transparent hover:from-amber-200 hover:to-yellow-400 transition-all"
           >
             My Programania
           </Link>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-200 hover:text-white focus:outline-none"
+            className="md:hidden text-stone-200 hover:text-white focus:outline-none"
             aria-label="Toggle menu"
           >
             <svg
@@ -87,7 +86,7 @@ export default function Navigation() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="block py-2 text-gray-300 hover:text-white hover:bg-purple-900/30 md:hover:bg-transparent md:hover:text-purple-400 transition-all duration-200 font-medium"
+                    className="block py-2 text-stone-300 hover:text-white hover:bg-amber-900/30 md:hover:bg-transparent md:hover:text-amber-400 transition-all duration-200 font-medium"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.label}
@@ -96,8 +95,8 @@ export default function Navigation() {
               ))}
               <li className="mt-4 md:mt-0">
                 <Link
-                  href="mailto:adanmohammad800@gmail.com"
-                  className="inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/30"
+                  href="/#contact"
+                  className="inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-400 hover:to-yellow-500 text-white rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30"
                 >
                   Let's Connect
                 </Link>
