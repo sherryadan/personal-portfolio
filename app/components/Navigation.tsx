@@ -29,10 +29,10 @@ export default function Navigation() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b",
         scrolled
-          ? "bg-gray-950/80 backdrop-blur-md py-3 shadow-lg shadow-purple-900/20 border-b border-gray-800"
-          : "bg-transparent py-5"
+          ? "bg-gray-950/80 backdrop-blur-md py-3 shadow-lg shadow-purple-900/20 border-gray-800"
+          : "bg-transparent py-5 border-transparent"
       )}
     >
       <nav className="container mx-auto px-4 md:px-8">
@@ -96,7 +96,7 @@ export default function Navigation() {
               ))}
               <li className="mt-4 md:mt-0">
                 <Link
-                  href="mailto:adanmohammad80@gmail.com"
+                  href="mailto:adanmohammad800@gmail.com"
                   className="inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/30"
                 >
                   Let's Connect

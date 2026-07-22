@@ -6,8 +6,8 @@ import { useState } from "react";
 const contactInfo = [
   {
     label: "Email",
-    value: "adanmohammad80@gmail.com",
-    href: "mailto:adanmohammad80@gmail.com",
+    value: "adanmohammad800@gmail.com",
+    href: "mailto:adanmohammad800@gmail.com",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -16,8 +16,8 @@ const contactInfo = [
   },
   {
     label: "Phone",
-    value: "+92 03187845044",
-    href: "tel:+9203187845044",
+    value: "+92 318 7845044",
+    href: "tel:+923187845044",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -68,7 +68,7 @@ export default function ContactSection({ id }: { id?: string }) {
       setFormData({ name: "", email: "", message: "" });
       setTimeout(() => setSubmitted(false), 5000);
     } catch {
-      alert("Failed to send message. Please email me directly at adanmohammad80@gmail.com");
+      alert("Failed to send message. Please email me directly at adanmohammad800@gmail.com");
     } finally {
       setIsSubmitting(false);
     }
@@ -120,7 +120,7 @@ export default function ContactSection({ id }: { id?: string }) {
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
                     className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all duration-200"
-                    placeholder="John Doe"
+                    placeholder="e.g. Ahmed Raza"
                   />
                 </div>
 
@@ -135,7 +135,7 @@ export default function ContactSection({ id }: { id?: string }) {
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
                     className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all duration-200"
-                    placeholder="john@example.com"
+                    placeholder="e.g. ahmed.raza@email.com"
                   />
                 </div>
 
@@ -150,7 +150,7 @@ export default function ContactSection({ id }: { id?: string }) {
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
                     className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all duration-200 resize-none"
-                    placeholder="Tell me about your project or opportunity..."
+                    placeholder="e.g. Hi Adan, I came across your portfolio and would love to discuss a potential opportunity..."
                   />
                 </div>
 

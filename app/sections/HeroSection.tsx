@@ -87,7 +87,7 @@ export default function HeroSection({ id }: { id?: string }) {
               </svg>
             </a>
             <a
-              href="mailto:adanmohammad80@gmail.com"
+              href="mailto:adanmohammad800@gmail.com"
               className="inline-flex items-center justify-center px-8 py-4 bg-gray-800 hover:bg-gray-700 text-white rounded-full font-semibold border border-gray-700 hover:border-purple-500/50 transition-all duration-300"
             >
               Get in Touch
