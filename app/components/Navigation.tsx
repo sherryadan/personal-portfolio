@@ -41,7 +41,7 @@ export default function Navigation() {
             href="/"
             className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent hover:from-purple-300 hover:to-pink-500 transition-all"
           >
-            ADAN
+            My Programania
           </Link>
 
           <button

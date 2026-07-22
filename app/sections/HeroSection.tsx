@@ -3,13 +3,6 @@
 import { motion } from "framer-motion";
 
 export default function HeroSection({ id }: { id?: string }) {
-  const roles = [
-    "Full-Stack Software Engineer",
-    "React.js Developer",
-    "Next.js Specialist",
-    "Python Developer",
-    "AI Engineer",
-  ];
 
   return (
     <section
@@ -41,11 +34,13 @@ export default function HeroSection({ id }: { id?: string }) {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
           >
-            Muhammad
-            <br />
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
-              Adan
-            </span>
+            <div className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              Hello, I Am
+              <br />
+              <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-purple-400 bg-clip-text text-transparent">
+                ADAN
+              </span>
+            </div>
           </motion.h1>
 
           <motion.div
@@ -54,10 +49,7 @@ export default function HeroSection({ id }: { id?: string }) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl md:text-2xl text-gray-300 mb-8 h-8 flex justify-center items-center"
           >
-            <span className="inline-block">
-              {roles[0]}
-            </span>
-            <span className="ml-2 text-purple-400">|</span>
+            Full-Stack Software Engineer
           </motion.div>
 
           <motion.p

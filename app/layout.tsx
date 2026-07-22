@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
   display: "swap",
 });
@@ -24,7 +24,7 @@ export default function RootLayout({
       className="scroll-smooth"
       style={{ scrollBehavior: "smooth" }}
     >
-      <body className={`${inter.variable} font-sans antialiased bg-gray-950 text-gray-100 h-full`}>{children}</body>
+      <body className={`${playfair.variable} font-serif antialiased bg-gray-950 text-gray-100 h-full`}>{children}</body>
     </html>
   );
 }

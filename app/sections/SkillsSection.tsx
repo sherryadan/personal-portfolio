@@ -11,12 +11,12 @@ const skillCategories = [
     borderColor: "border-blue-500/30",
     bgColor: "bg-blue-900/20",
     skills: [
-      { name: "React.js", level: 95 },
-      { name: "Next.js", level: 90 },
-      { name: "TypeScript", level: 85 },
-      { name: "JavaScript", level: 92 },
-      { name: "Tailwind CSS", level: 88 },
-      { name: "Bootstrap", level: 75 },
+      { name: "React.js", level: 92 },
+      { name: "Next.js", level: 88 },
+      { name: "TypeScript", level: 84 },
+      { name: "JavaScript", level: 89 },
+      { name: "Tailwind CSS", level: 85 },
+      { name: "Bootstrap", level: 67 },
     ],
   },
   {
@@ -26,10 +26,10 @@ const skillCategories = [
     borderColor: "border-green-500/30",
     bgColor: "bg-green-900/20",
     skills: [
-      { name: "Python", level: 85 },
-      { name: "FastAPI", level: 80 },
-      { name: "REST APIs", level: 90 },
-      { name: "API Integration", level: 85 },
+      { name: "Python", level: 84 },
+      { name: "FastAPI", level: 78 },
+      { name: "REST APIs", level: 88 },
+      { name: "API Integration", level: 82 },
     ],
   },
   {
@@ -39,8 +39,8 @@ const skillCategories = [
     borderColor: "border-purple-500/30",
     bgColor: "bg-purple-900/20",
     skills: [
-      { name: "MongoDB", level: 80 },
-      { name: "Supabase", level: 85 },
+      { name: "MongoDB", level: 78 },
+      { name: "Supabase", level: 82 },
     ],
   },
   {
@@ -50,13 +50,13 @@ const skillCategories = [
     borderColor: "border-orange-500/30",
     bgColor: "bg-orange-900/20",
     skills: [
-      { name: "Git", level: 90 },
-      { name: "GitHub", level: 95 },
-      { name: "Vercel", level: 80 },
-      { name: "Retool", level: 75 },
-      { name: "VS Code", level: 95 },
-      { name: "Cursor", level: 70 },
-      { name: "Claude", level: 65 },
+      { name: "Git", level: 88 },
+      { name: "GitHub", level: 92 },
+      { name: "Vercel", level: 77 },
+      { name: "Retool", level: 67 },
+      { name: "VS Code", level: 85 },
+      { name: "Cursor", level: 62 },
+      { name: "Claude", level: 57 },
     ],
   },
   {
@@ -66,8 +66,8 @@ const skillCategories = [
     borderColor: "border-red-500/30",
     bgColor: "bg-red-900/20",
     skills: [
-      { name: "Stripe", level: 85 },
-      { name: "Email Workflows", level: 80 },
+      { name: "Stripe", level: 82 },
+      { name: "Email Workflows", level: 77 },
     ],
   },
   {
@@ -77,10 +77,10 @@ const skillCategories = [
     borderColor: "border-teal-500/30",
     bgColor: "bg-teal-900/20",
     skills: [
-      { name: "Feature Development", level: 90 },
-      { name: "Debugging & Maintenance", level: 88 },
-      { name: "Full-Stack Development", level: 92 },
-      { name: "Agile/Scrum Collaboration", level: 85 },
+      { name: "Feature Development", level: 87 },
+      { name: "Debugging & Maintenance", level: 85 },
+      { name: "Full-Stack Development", level: 89 },
+      { name: "Agile/Scrum Collaboration", level: 82 },
     ],
   },
 ];
