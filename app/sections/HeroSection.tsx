@@ -98,19 +98,11 @@ export default function HeroSection({ id }: { id?: string }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="mt-12 flex justify-center lg:justify-start gap-8"
+              className="mt-12 flex justify-center lg:justify-start"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-300">4+</div>
-                <div className="text-sm text-stone-400">Featured Projects</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-amber-300">2</div>
-                <div className="text-sm text-stone-400">Professional SE Roles</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-amber-300">1</div>
-                <div className="text-sm text-stone-400">Master's (In Progress)</div>
+                <div className="text-3xl font-bold text-amber-300">2+</div>
+                <div className="text-sm text-stone-400">Years of Experience</div>
               </div>
             </motion.div>
           </div>
