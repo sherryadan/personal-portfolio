@@ -17,18 +17,6 @@ const experiences = [
     ],
   },
   {
-    title: "FREELANCE CONTENT WRITER & ACADEMIC RESEARCHER",
-    company: "Remote — Pakistan",
-    location: "Remote",
-    duration: "Nov 2025 - June 2026",
-    achievements: [
-      "Delivered academic writing, research papers, blog posts, and long-form digital content for remote clients",
-      "Conducted online research and synthesized complex information into clear written content",
-      "Edited and proofread academic documents with strong attention to detail",
-      "Managed assignments, deadlines, revisions, and delivery independently",
-    ],
-  },
-  {
     title: "SOFTWARE ENGINEER",
     company: "Excillium",
     location: "Lahore, Pakistan",
@@ -51,6 +39,18 @@ const experiences = [
       "Built REST APIs and managed data with MongoDB",
       "Implemented task management features from scratch",
       "Managed version control workflows using Git and GitHub",
+    ],
+  },
+  {
+    title: "FREELANCE CONTENT WRITER & ACADEMIC RESEARCHER",
+    company: "Remote — Pakistan",
+    location: "Remote",
+    duration: "Dec 2021 - July 2023",
+    achievements: [
+      "Delivered academic writing, research papers, blog posts, and long-form digital content for remote clients",
+      "Conducted online research and synthesized complex information into clear written content",
+      "Edited and proofread academic documents with strong attention to detail",
+      "Managed assignments, deadlines, revisions, and delivery independently",
     ],
   },
 ];
