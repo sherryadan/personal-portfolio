@@ -22,10 +22,14 @@ export default function HeroSection({ id }: { id?: string }) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="mb-4"
+              className="mb-4 flex flex-wrap gap-3 justify-center lg:justify-start"
             >
-              <span className="inline-block px-4 py-2 bg-amber-900/30 backdrop-blur-sm rounded-full text-amber-300 text-sm font-medium border border-amber-500/30">
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-amber-900/30 backdrop-blur-sm rounded-full text-amber-300 text-sm font-medium border border-amber-500/30">
                 2+ Years of Experience
+              </span>
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-amber-900/30 backdrop-blur-sm rounded-full text-amber-300 text-sm font-medium border border-amber-500/30">
+                <span className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
+                Open to Work
               </span>
             </motion.div>
 
@@ -94,17 +98,7 @@ export default function HeroSection({ id }: { id?: string }) {
             >
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              className="mt-12 flex justify-center lg:justify-start"
-            >
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-900/30 backdrop-blur-sm rounded-full text-emerald-300 text-sm font-medium border border-emerald-500/30">
-                <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-                Open to Work
-              </span>
-            </motion.div>
+
           </div>
 
           <motion.div
