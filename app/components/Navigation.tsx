@@ -1,0 +1,111 @@
+"use client";
+
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { cn } from "../lib/utils";
+
+export default function Navigation() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navItems = [
+    { href: "/#about", label: "About" },
+    { href: "/#skills", label: "Skills" },
+    { href: "/#experience", label: "Experience" },
+    { href: "/#projects", label: "Projects" },
+    { href: "/#education", label: "Education" },
+    { href: "/#contact", label: "Contact" },
+  ];
+
+  return (
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        scrolled
+          ? "bg-gray-950/80 backdrop-blur-md py-3 shadow-lg shadow-purple-900/20 border-b border-gray-800"
+          : "bg-transparent py-5"
+      )}
+    >
+      <nav className="container mx-auto px-4 md:px-8">
+        <div className="flex items-center justify-between">
+          <Link
+            href="/"
+            className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent hover:from-purple-300 hover:to-pink-500 transition-all"
+          >
+            ADAN
+          </Link>
+
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-gray-200 hover:text-white focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {isOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+
+          <div
+            className={cn(
+              "absolute md:relative top-full left-0 right-0 bg-gray-950/95 md:bg-transparent backdrop-blur-md md:backdrop-blur-none",
+              "transition-all duration-300 ease-in-out",
+              isOpen
+                ? "opacity-100 translate-y-0 shadow-2xl"
+                : "opacity-0 -translate-y-4 md:opacity-100 md:translate-y-0 md:shadow-none pointer-events-none md:pointer-events-auto"
+            )}
+          >
+            <ul className="flex flex-col md:flex-row md:items-center md:space-x-8 p-4 md:p-0">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="block py-2 text-gray-300 hover:text-white hover:bg-purple-900/30 md:hover:bg-transparent md:hover:text-purple-400 transition-all duration-200 font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+              <li className="mt-4 md:mt-0">
+                <Link
+                  href="mailto:adanmohammad80@gmail.com"
+                  className="inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/30"
+                >
+                  Let's Connect
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
+}
