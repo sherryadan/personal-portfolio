@@ -25,7 +25,7 @@ export default function HeroSection({ id }: { id?: string }) {
               className="mb-4"
             >
               <span className="inline-block px-4 py-2 bg-amber-900/30 backdrop-blur-sm rounded-full text-amber-300 text-sm font-medium border border-amber-500/30">
-                Available for Remote Opportunities
+                2+ Years of Experience
               </span>
             </motion.div>
 
@@ -100,10 +100,10 @@ export default function HeroSection({ id }: { id?: string }) {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="mt-12 flex justify-center lg:justify-start"
             >
-              <div className="text-center">
-                <div className="text-3xl font-bold text-amber-300">2+</div>
-                <div className="text-sm text-stone-400">Years of Experience</div>
-              </div>
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-900/30 backdrop-blur-sm rounded-full text-emerald-300 text-sm font-medium border border-emerald-500/30">
+                <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
+                Open to Work
+              </span>
             </motion.div>
           </div>
 
