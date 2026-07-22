@@ -1,5 +1,6 @@
 import Navigation from "./components/Navigation";
 import HeroSection from "./sections/HeroSection";
+import AboutSection from "./sections/AboutSection";
 import SkillsSection from "./sections/SkillsSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import ProjectsSection from "./sections/ProjectsSection";
@@ -11,7 +12,8 @@ export default function Home() {
     <div className="min-h-screen bg-gray-950">
       <Navigation />
       <div className="pt-24">
-        <HeroSection id="about" />
+        <HeroSection id="hero" />
+        <AboutSection id="about" />
         <SkillsSection id="skills" />
         <ExperienceSection id="experience" />
         <ProjectsSection id="projects" />

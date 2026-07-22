@@ -7,7 +7,7 @@ const projects = [
     title: "MARI — Brand-Crafter Collaboration Platform",
     role: "Software Engineer | Team Project",
     description:
-      "A platform designed to act as a digital middleman between brands and crafters, enabling collaboration and interaction between both sides.",
+      "A platform designed to connect brands with crafters and facilitate collaboration between both sides.",
     contributions: [
       "Independently built the complete administrative portal using Retool",
       "Integrated Stripe payment functionality",
@@ -22,7 +22,7 @@ const projects = [
     title: "Task Manager Application",
     role: "Independent Developer",
     description:
-      "Developed a task management application designed to help users organize, manage, and track tasks through a web-based interface.",
+      "Built a full-stack task management application designed to help users organize, manage, and track tasks through a web-based interface.",
     contributions: [],
     technologies: ["React.js", "Next.js", "REST APIs", "MongoDB", "JavaScript/TypeScript"],
     gradient: "from-yellow-600 to-amber-500",
@@ -31,7 +31,7 @@ const projects = [
     title: "AI-Powered Desktop Assistant",
     role: "Developer",
     description:
-      "Developed an AI-powered desktop assistant as a personal software project exploring intelligent interaction and automation.",
+      "An AI-powered desktop assistant developed as a software project exploring intelligent interaction and automation capabilities.",
     contributions: [],
     technologies: ["Python", "AI/ML"],
     gradient: "from-orange-600 to-amber-600",
@@ -40,7 +40,7 @@ const projects = [
     title: "IT Dukes Company Website",
     role: "Independent Developer",
     description:
-      "Developed the official company website for IT Dukes using modern frontend technologies and responsive web development practices.",
+      "Independently developed the official company website for IT Dukes using modern frontend technologies and responsive web development practices.",
     contributions: [],
     technologies: ["React.js", "Next.js", "Tailwind CSS", "Bootstrap"],
     gradient: "from-stone-600 to-zinc-600",

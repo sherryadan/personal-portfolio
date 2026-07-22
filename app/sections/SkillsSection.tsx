@@ -5,58 +5,41 @@ import { cn } from "../lib/utils";
 
 const skillCategories = [
   {
-    name: "Frontend Development",
+    name: "Frontend",
     color: "from-amber-500 to-yellow-400",
     textColor: "text-amber-300",
     borderColor: "border-amber-500/30",
     bgColor: "bg-amber-900/20",
     skills: [
-      { name: "React.js", level: 92 },
-      { name: "Next.js", level: 88 },
-      { name: "TypeScript", level: 84 },
-      { name: "JavaScript", level: 89 },
-      { name: "Tailwind CSS", level: 85 },
-      { name: "Bootstrap", level: 67 },
+      "React.js",
+      "Next.js",
+      "JavaScript",
+      "TypeScript",
+      "Tailwind CSS",
+      "Bootstrap",
     ],
   },
   {
-    name: "Backend Development",
+    name: "Backend",
     color: "from-yellow-600 to-amber-500",
     textColor: "text-yellow-300",
     borderColor: "border-yellow-500/30",
     bgColor: "bg-yellow-900/20",
     skills: [
-      { name: "Python", level: 84 },
-      { name: "FastAPI", level: 78 },
-      { name: "REST APIs", level: 88 },
-      { name: "API Integration", level: 82 },
+      "Python",
+      "FastAPI",
+      "REST APIs",
     ],
   },
   {
-    name: "Databases",
+    name: "Databases & Backend Platforms",
     color: "from-yellow-500 to-amber-400",
     textColor: "text-yellow-300",
     borderColor: "border-yellow-500/30",
     bgColor: "bg-yellow-900/20",
     skills: [
-      { name: "MongoDB", level: 78 },
-      { name: "Supabase", level: 82 },
-    ],
-  },
-  {
-    name: "Tools & Platforms",
-    color: "from-orange-500 to-amber-400",
-    textColor: "text-orange-300",
-    borderColor: "border-orange-500/30",
-    bgColor: "bg-orange-900/20",
-    skills: [
-      { name: "Git", level: 88 },
-      { name: "GitHub", level: 92 },
-      { name: "Vercel", level: 77 },
-      { name: "Retool", level: 67 },
-      { name: "VS Code", level: 85 },
-      { name: "Cursor", level: 62 },
-      { name: "Claude", level: 57 },
+      "MongoDB",
+      "Supabase",
     ],
   },
   {
@@ -66,21 +49,24 @@ const skillCategories = [
     borderColor: "border-amber-500/30",
     bgColor: "bg-amber-900/20",
     skills: [
-      { name: "Stripe", level: 82 },
-      { name: "Email Workflows", level: 77 },
+      "Stripe",
+      "Email Notification Workflows",
     ],
   },
   {
-    name: "Development Practices",
-    color: "from-yellow-600 to-amber-400",
-    textColor: "text-yellow-300",
-    borderColor: "border-yellow-500/30",
-    bgColor: "bg-yellow-900/20",
+    name: "Tools & Platforms",
+    color: "from-orange-500 to-amber-400",
+    textColor: "text-orange-300",
+    borderColor: "border-orange-500/30",
+    bgColor: "bg-orange-900/20",
     skills: [
-      { name: "Feature Development", level: 87 },
-      { name: "Debugging & Maintenance", level: 85 },
-      { name: "Full-Stack Development", level: 89 },
-      { name: "Agile/Scrum Collaboration", level: 82 },
+      "Git",
+      "GitHub",
+      "Vercel",
+      "Retool",
+      "Visual Studio Code",
+      "Cursor",
+      "Claude",
     ],
   },
 ];
@@ -106,11 +92,11 @@ export default function SkillsSection({ id }: { id?: string }) {
               </span>
             </h2>
             <p className="text-lg text-stone-400 max-w-2xl mx-auto">
-              Comprehensive expertise across the entire development stack, from frontend interfaces to backend systems and deployment.
+              Technologies and tools I use to build modern web applications and products.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.name}
@@ -119,40 +105,33 @@ export default function SkillsSection({ id }: { id?: string }) {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
                 className={cn(
-                  "p-8 rounded-2xl glass border transition-all duration-300 hover:scale-105",
+                  "p-6 rounded-2xl glass border transition-all duration-300 hover:scale-105",
                   category.borderColor,
                   category.bgColor
                 )}
               >
                 <h3
                   className={cn(
-                    "text-2xl font-bold mb-6",
+                    "text-lg font-bold mb-4",
                     category.textColor
                   )}
                 >
                   {category.name}
                 </h3>
 
-                <div className="space-y-6">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skill.name}>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-stone-300 font-medium">{skill.name}</span>
-                        <span className={cn("text-sm font-bold", category.textColor)}>{skill.level}%</span>
-                      </div>
-                      <div className="w-full bg-stone-800 rounded-full h-2 overflow-hidden">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.8, delay: 0.3 + skillIndex * 0.1 }}
-                          className={cn(
-                            "h-full rounded-full transition-all duration-1000",
-                            `bg-gradient-to-r ${category.color}`
-                          )}
-                        />
-                      </div>
-                    </div>
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className={cn(
+                        "px-3 py-1.5 text-sm font-medium rounded-full border",
+                        category.textColor,
+                        category.borderColor,
+                        category.bgColor
+                      )}
+                    >
+                      {skill}
+                    </span>
                   ))}
                 </div>
               </motion.div>

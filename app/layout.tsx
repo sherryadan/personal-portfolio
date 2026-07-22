@@ -10,7 +10,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Muhammad Adan - Full-Stack Software Engineer",
-  description: "Muhammad Adan is a Full-Stack Software Engineer specializing in React.js, Next.js, TypeScript, Python, and modern web technologies. Available for remote opportunities.",
+  description: "Muhammad Adan is a Full-Stack Software Engineer specializing in React.js, Next.js, TypeScript, Python, FastAPI, and modern web technologies. Available for remote opportunities.",
 };
 
 export default function RootLayout({
