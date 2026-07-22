@@ -51,7 +51,7 @@ const experiences = [
     title: "FREELANCE CONTENT WRITER & ACADEMIC RESEARCHER",
     company: "Remote — Pakistan",
     location: "Remote",
-    duration: "Nov 2025 - June 2026",
+    duration: "Nov 2021 - June 2023",
     achievements: [
       "Delivered remote freelance writing services focused on academic content, research-based writing, blog posts, and long-form digital content",
       "Conducted online research and synthesized complex information into clear, structured, and audience-appropriate written content",
