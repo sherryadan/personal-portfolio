@@ -26,7 +26,7 @@ const contactInfo = [
   },
   {
     label: "Location",
-    value: "Lahore / Malakwal, Pakistan",
+    value: "Faisalabad / Lahore, Pakistan",
     href: null,
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
